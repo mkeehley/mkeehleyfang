@@ -12,67 +12,161 @@
 
 <body>
 
-    <nav>
-        <div class="logo">Miara Keehley-Fang</div>
+    <!-- NAVIGATION -->
+    <header class="site-header">
 
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+        <a href="#" class="brand">
+
+            <div class="monogram" aria-label="MK">
+                <span>M</span><span>K</span>
+            </div>
+
+            <span class="brand-name">MIARA KEEHLEY-FANG</span>
+
+        </a>
+
+        <nav class="nav-links">
+            <a href="#work">WORK</a>
+            <a href="#about">ABOUT</a>
+            <a href="#credentials">CREDENTIALS</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+
+    </header>
+
 
     <main>
 
         <!-- HERO -->
         <section class="hero">
 
-            <div class="hero-text">
+            <div class="hero-copy">
 
-                <p class="label">DATA • AI • PRODUCT STRATEGY</p>
-
-                <h1>
-                    From complex data<br>
-                    <span>to intelligent products.</span>
-                </h1>
-
-                <p class="description">
-                    Exploring the intersection of artificial intelligence,
-                    data analytics, business strategy, and human-centered products.
+                <p class="eyebrow">
+                    AI PRODUCT
+                    <span>•</span>
+                    DATA
+                    <span>•</span>
+                    STRATEGY
                 </p>
 
-                <a href="#work" class="work-link">
-                    View my work ↓
+                <h1 class="hero-title">
+            <span class="title-white">Master the Mess.</span>
+            <span class="title-gradient">Drive the Model.</span>
+            </h1>
+
+                <p class="hero-description">
+                    Turning complex data, ambiguous problems, and emerging AI
+                    into products people can actually use.
+                </p>
+
+                <a href="#work" class="primary-button">
+                    EXPLORE MY WORK
+                    <span>→</span>
                 </a>
 
             </div>
 
-            <!-- ROTATING BLUE CARD -->
-            <div class="hero-card">
 
-                <div class="card-content active">
-                    <span>MIARA</span>
-                    <h2>AI + DATA</h2>
-                    <span>PRODUCT</span>
+            <!-- ROTATING 3D PROJECT VISUAL -->
+            <div class="project-showcase">
+
+                <button
+                    class="slider-arrow slider-arrow-left"
+                    id="previousProject"
+                    aria-label="Previous project">
+                    ‹
+                </button>
+
+                <div class="project-stage">
+
+                    <a href="#work" class="project-slide active">
+
+                        <img
+                            src="images/interiornetwork.png"
+                            alt="AI product strategy project">
+
+                        <div class="project-glass">
+                            <span class="project-number">01 / 04</span>
+                            <span class="project-category">AI PRODUCT STRATEGY</span>
+                            <h2>AI Product Roadmap</h2>
+                            <span class="project-link">
+                                VIEW PROJECT →
+                            </span>
+                        </div>
+
+                    </a>
+
+
+                    <a href="#work" class="project-slide">
+
+                        <img
+                            src="images/dome.png"
+                            alt="Data systems project">
+
+                        <div class="project-glass">
+                            <span class="project-number">02 / 04</span>
+                            <span class="project-category">DATA SYSTEMS</span>
+                            <h2>Intelligent Data Pipeline</h2>
+                            <span class="project-link">
+                                VIEW PROJECT →
+                            </span>
+                        </div>
+
+                    </a>
+
+
+                    <a href="#work" class="project-slide">
+
+                        <img
+                            src="images/library.png"
+                            alt="Research and strategy project">
+
+                        <div class="project-glass">
+                            <span class="project-number">03 / 04</span>
+                            <span class="project-category">RESEARCH + STRATEGY</span>
+                            <h2>Knowledge Intelligence</h2>
+                            <span class="project-link">
+                                VIEW PROJECT →
+                            </span>
+                        </div>
+
+                    </a>
+
+
+                    <a href="#work" class="project-slide">
+
+                        <img
+                            src="images/outdoorcity.png"
+                            alt="Product design project">
+
+                        <div class="project-glass">
+                            <span class="project-number">04 / 04</span>
+                            <span class="project-category">PRODUCT DESIGN</span>
+                            <h2>Customer Insights Platform</h2>
+                            <span class="project-link">
+                                VIEW PROJECT →
+                            </span>
+                        </div>
+
+                    </a>
+
                 </div>
 
-                <div class="card-content">
-                    <span>01</span>
-                    <h2>DATA</h2>
-                    <span>ANALYTICS • SQL • INSIGHTS</span>
-                </div>
+                <button
+                    class="slider-arrow slider-arrow-right"
+                    id="nextProject"
+                    aria-label="Next project">
+                    ›
+                </button>
 
-                <div class="card-content">
-                    <span>02</span>
-                    <h2>AI</h2>
-                    <span>INTELLIGENCE • AUTOMATION • MODELS</span>
-                </div>
 
-                <div class="card-content">
-                    <span>03</span>
-                    <h2>PRODUCT</h2>
-                    <span>STRATEGY • USERS • DECISIONS</span>
+                <div class="slider-dots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                    <button class="dot" data-slide="3"></button>
                 </div>
 
             </div>
@@ -80,35 +174,214 @@
         </section>
 
 
-        <!-- WORK -->
-        <section id="work" class="work">
+        <!-- PROCESS BAND -->
+        <section class="process-strip">
 
-            <p class="label">SELECTED WORK</p>
+    <div class="process-item">
+        <div class="process-icon">
+            <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="6"></circle>
+                <line x1="16" y1="16" x2="21" y2="21"></line>
+            </svg>
+        </div>
 
-            <h2>Currently building.</h2>
+        <span class="process-number">01</span>
 
-            <div class="project-grid">
+        <div>
+            <h3>DISCOVER</h3>
+            <p>Find the real problem inside the noise.</p>
+        </div>
+    </div>
 
-                <article class="project">
-                    <span class="number">01</span>
-                    <h3>AI Product Strategy</h3>
-                    <p>Coming soon.</p>
-                </article>
+    <span class="process-divider">→</span>
 
-                <article class="project">
-                    <span class="number">02</span>
-                    <h3>Data + AI</h3>
-                    <p>Coming soon.</p>
-                </article>
+    <div class="process-item">
+        <div class="process-icon">
+            <svg viewBox="0 0 24 24">
+                <line x1="4" y1="20" x2="20" y2="20"></line>
+                <rect x="5" y="13" width="3" height="7"></rect>
+                <rect x="11" y="9" width="3" height="11"></rect>
+                <rect x="17" y="4" width="3" height="16"></rect>
+            </svg>
+        </div>
 
-                <article class="project">
-                    <span class="number">03</span>
-                    <h3>Product Analysis</h3>
-                    <p>Coming soon.</p>
-                </article>
+        <span class="process-number">02</span>
+
+        <div>
+            <h3>ANALYZE</h3>
+            <p>Turn data into clarity.</p>
+        </div>
+    </div>
+
+    <span class="process-divider">→</span>
+
+    <div class="process-item">
+        <div class="process-icon">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="5" r="2"></circle>
+                <circle cx="6" cy="12" r="2"></circle>
+                <circle cx="18" cy="12" r="2"></circle>
+                <circle cx="12" cy="19" r="2"></circle>
+
+                <line x1="10.5" y1="6.5" x2="7.5" y2="10.5"></line>
+                <line x1="13.5" y1="6.5" x2="16.5" y2="10.5"></line>
+                <line x1="7.5" y1="13.5" x2="10.5" y2="17.5"></line>
+                <line x1="16.5" y1="13.5" x2="13.5" y2="17.5"></line>
+            </svg>
+        </div>
+
+        <span class="process-number">03</span>
+
+        <div>
+            <h3>MODEL</h3>
+            <p>Apply AI where it creates value.</p>
+        </div>
+    </div>
+
+    <span class="process-divider">→</span>
+
+    <div class="process-item">
+        <div class="process-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M14 4c3-1 5-1 6-1 0 1 0 3-1 6l-6 6-4-4z"></path>
+                <path d="M9 11l-4 1-2 3 5 1"></path>
+                <path d="M13 15l-1 4-3 2-1-5"></path>
+                <circle cx="15.5" cy="7.5" r="1.2"></circle>
+            </svg>
+        </div>
+
+        <span class="process-number">04</span>
+
+        <div>
+            <h3>EXECUTE</h3>
+            <p>Deliver something measurable.</p>
+        </div>
+    </div>
+
+</section>
+
+
+        <!-- ABOUT + TOOLS -->
+        <section class="intro-section" id="about">
+
+            <div class="about-preview">
+
+                <div class="portrait-wrap">
+                    <img
+                        src="images/greysuit.png"
+                        alt="Miara Keehley-Fang">
+                </div>
+
+                <div class="about-copy">
+
+                    <p class="section-label">ABOUT ME</p>
+
+                    <h2>Hi, I'm Miara.</h2>
+
+                    <p>
+                        My work sits at the intersection of data, business
+                        operations, AI, and product strategy. I focus on making
+                        complex information easier to understand, structure,
+                        and turn into useful solutions.
+                    </p>
+
+                    <a href="#" class="text-link">
+                        MORE ABOUT ME →
+                    </a>
+
+                </div>
 
             </div>
 
+
+            <div class="tools-list">
+
+    <div class="tool">
+        <svg viewBox="0 0 24 24">
+            <path d="M7 5h7a3 3 0 0 1 3 3v3H9a3 3 0 0 0-3 3v1H4a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z"></path>
+            <circle cx="6" cy="7.5" r=".8"></circle>
+            <path d="M17 19h-7a3 3 0 0 1-3-3v-3h8a3 3 0 0 0 3-3V9h2a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3z"></path>
+            <circle cx="18" cy="16.5" r=".8"></circle>
+        </svg>
+        <span>Python</span>
+    </div>
+
+    <div class="tool">
+        <svg viewBox="0 0 24 24">
+            <ellipse cx="12" cy="5" rx="7" ry="3"></ellipse>
+            <path d="M5 5v7c0 1.7 3.1 3 7 3s7-1.3 7-3V5"></path>
+            <path d="M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7"></path>
+        </svg>
+        <span>SQL</span>
+    </div>
+
+    <div class="tool">
+        <svg viewBox="0 0 24 24">
+            <rect x="3" y="13" width="3" height="7"></rect>
+            <rect x="8" y="9" width="3" height="11"></rect>
+            <rect x="13" y="5" width="3" height="15"></rect>
+            <rect x="18" y="2" width="3" height="18"></rect>
+        </svg>
+        <span>Power BI</span>
+    </div>
+
+    <div class="tool">
+        <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="3"></circle>
+            <circle cx="12" cy="3" r="1.5"></circle>
+            <circle cx="21" cy="12" r="1.5"></circle>
+            <circle cx="12" cy="21" r="1.5"></circle>
+            <circle cx="3" cy="12" r="1.5"></circle>
+            <line x1="12" y1="4.5" x2="12" y2="9"></line>
+            <line x1="19.5" y1="12" x2="15" y2="12"></line>
+            <line x1="12" y1="19.5" x2="12" y2="15"></line>
+            <line x1="4.5" y1="12" x2="9" y2="12"></line>
+        </svg>
+        <span>AI / ML</span>
+    </div>
+
+    <div class="tool">
+        <svg viewBox="0 0 24 24">
+            <path d="M9 18h6"></path>
+            <path d="M10 21h4"></path>
+            <path d="M8 14c-1.5-1.2-2.5-3-2.5-5a6.5 6.5 0 0 1 13 0c0 2-1 3.8-2.5 5-1 .8-1 1.5-1 2H9c0-.5 0-1.2-1-2z"></path>
+        </svg>
+        <span>Product Strategy</span>
+    </div>
+
+    <div class="tool">
+        <svg viewBox="0 0 24 24">
+            <polyline points="3,18 8,12 12,15 17,7 21,10"></polyline>
+            <line x1="3" y1="21" x2="21" y2="21"></line>
+        </svg>
+        <span>Data Visualization</span>
+    </div>
+
+</div>
+
+                <a href="#" class="text-link">
+                    VIEW FULL TOOLKIT →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEMPORARY ANCHORS -->
+        <section id="work" class="placeholder-section">
+            <p class="section-label">PROJECTS</p>
+            <h2>Case studies coming next.</h2>
+        </section>
+
+        <section id="experience" class="placeholder-section">
+            <p class="section-label">EXPERIENCE</p>
+            <h2>Experience section coming next.</h2>
+        </section>
+
+        <section id="contact" class="placeholder-section">
+            <p class="section-label">CONTACT</p>
+            <h2>Let's connect.</h2>
         </section>
 
     </main>
@@ -116,4 +389,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
