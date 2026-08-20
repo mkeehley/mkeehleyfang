@@ -1,91 +1,216 @@
-const slides = document.querySelectorAll(".project-slide");
-const dots = document.querySelectorAll(".dot");
+<!DOCTYPE html>
+<html lang="en">
 
-const nextButton = document.getElementById("nextProject");
-const previousButton = document.getElementById("previousProject");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-let currentSlide = 0;
-let autoRotate;
+    <title>Contact | Miara Keehley-Fang</title>
 
-
-function showSlide(index) {
-
-    slides[currentSlide].classList.remove("active");
-    dots[currentSlide].classList.remove("active");
-
-    currentSlide = (index + slides.length) % slides.length;
-
-    slides[currentSlide].classList.add("active");
-    dots[currentSlide].classList.add("active");
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
 
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
+<body class="contact-page">
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+
+    <a href="index.html" class="brand">
+        <div class="monogram" aria-label="MK">
+            <span>M</span><span>K</span>
+        </div>
+
+        <span class="brand-name">MIARA KEEHLEY-FANG</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav-links" id="mobileNav">
+        <a href="projects.html">WORK</a>
+        <a href="index.html#about">ABOUT</a>
+        <a href="index.html#credentials">CREDENTIALS</a>
+        <a href="index.html#experience">EXPERIENCE</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+</header>
 
 
-function previousSlide() {
-    showSlide(currentSlide - 1);
-}
+
+    <!-- CONTACT HERO -->
+
+    <main class="contact-hero">
+
+        <div class="contact-background"></div>
+
+        <div class="contact-overlay"></div>
 
 
-function startAutoRotate() {
-
-    autoRotate = setInterval(() => {
-        nextSlide();
-    }, 5000);
-
-}
+        <section class="contact-layout">
 
 
-function resetAutoRotate() {
+            <!-- LEFT SIDE -->
 
-    clearInterval(autoRotate);
-    startAutoRotate();
+            <div class="contact-intro">
 
-}
-
-
-nextButton.addEventListener("click", () => {
-    nextSlide();
-    resetAutoRotate();
-});
+                <p class="contact-eyebrow">
+                    DATA • AI • PRODUCT • STRATEGY
+                </p>
 
 
-previousButton.addEventListener("click", () => {
-    previousSlide();
-    resetAutoRotate();
-});
+                <h1 class="contact-title">
+                    LET'S TALK
+                </h1>
 
 
-dots.forEach((dot, index) => {
-
-    dot.addEventListener("click", () => {
-        showSlide(index);
-        resetAutoRotate();
-    });
-
-});
+                <p class="contact-script">
+                    building what data makes possible.
+                </p>
 
 
-startAutoRotate();
+                <a
+                    href="https://www.linkedin.com/in/miarak/"
+                    class="linkedin-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
 
-const menuToggle = document.getElementById("menuToggle");
-const mobileNav = document.getElementById("mobileNav");
+                    <span class="linkedin-icon">
+                        in
+                    </span>
 
-if (menuToggle && mobileNav) {
+                    CONNECT ON LINKEDIN
 
-    menuToggle.addEventListener("click", () => {
-        mobileNav.classList.toggle("open");
-    });
+                    <span class="linkedin-arrow">
+                        →
+                    </span>
 
-    mobileNav.querySelectorAll("a").forEach(link => {
+                </a>
 
-        link.addEventListener("click", () => {
-            mobileNav.classList.remove("open");
-        });
+            </div>
 
-    });
 
-}
+
+            <!-- FORM -->
+
+            <div class="contact-form-card">
+
+                <div class="form-heading">
+
+                    <span class="form-number">
+                        01
+                    </span>
+
+                    <span class="form-label">
+                        START A CONVERSATION
+                    </span>
+
+                </div>
+
+
+                <form
+                    action="https://formspree.io/f/xljraojk"
+                    method="POST"
+                    class="contact-form">
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                EMAIL
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="company">
+                            COMPANY / ORGANIZATION
+                            <span>OPTIONAL</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            autocomplete="organization">
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            MESSAGE
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required></textarea>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="contact-submit">
+
+                        SEND MESSAGE
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
